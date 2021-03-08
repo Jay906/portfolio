@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --redPink: #ff4747;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: Roboto;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+  background: #f4f4f4;
+  width: 150px;
+  margin: 8px;
+  text-align: center;
+}
+
+.button-pink {
+  background: var(--redPink);
+  color: #f4f4f4;
+}
+
+.scroll-container {
+  width: 100%;
+  height: 100%;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.scroll-items {
+  scroll-snap-align: center;
+  height: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 95%;
+  }
+}
