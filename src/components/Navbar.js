@@ -35,6 +35,7 @@ const Navbar = styled.nav`
     height: 0;
     overflow: hidden;
     transition: all 0.4s;
+    background: rgba(0, 0, 0, 0.9);
   }
 
   .nav-links a {
